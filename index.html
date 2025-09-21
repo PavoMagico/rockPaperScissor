@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, Tijera</title>
+</head>
+
+<body>
+    <h1>Piedra, papel, tijera</h1>
+
+    <!-- Controles -->
+    
+    <div id="controles">
+        <button data-move="piedra" aria-label="Elegir piedra">Piedra</button>
+        <button data-move="papel" aria-label="Elegir papel">Papel</button>
+        <button data-move="tijera" aria-label="Elegir tijera">Tijera</button>
+      </div>
+    
+      <!-- Marcador sencillo -->
+      <div id="marcador">
+        <p>Jugador: <span id="score-jugador">0</span> · Máquina: <span id="score-maquina">0</span></p>
+      </div>
+    
+      <!-- Estado de la última ronda -->
+      <div id="estado">
+        <p>Tu elección: <strong id="jugada-jugador">—</strong></p>
+        <p>Máquina: <strong id="jugada-maquina">—</strong></p>
+        <p>Resultado: <strong id="resultado">—</strong></p>
+      </div>
+    
+
+    <script src="/script.js"></script>
+</body>
+</html>
