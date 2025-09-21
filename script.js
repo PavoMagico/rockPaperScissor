@@ -6,3 +6,9 @@ function jugadaMaquina() {
     const n = Math.floor(Math.random() * 3); // 0..2
     return MOVES[n];
 }
+
+function resultadoRonda(jugador, maquina) {
+    if (jugador === maquina) return "empate";
+    if (VENCE_A[jugador] === maquina) return "ganas!";
+    return "perdiste!";
+}
